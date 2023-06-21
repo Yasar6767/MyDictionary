@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace MyDictionary2
 {
@@ -17,6 +18,21 @@ namespace MyDictionary2
             {
                 Console.WriteLine(ogrenci);
             }
+
+            var ogrenciSayisi = Ogrenciler.Count();
+            Console.WriteLine("Kaç öğrenci var?");
+            Console.WriteLine(ogrenciSayisi);
+            Console.WriteLine();
+
+            Ogrenciler.Remove(1);
+
+            foreach (var ogrenci in Ogrenciler)
+            {
+                
+                Console.WriteLine(ogrenci);
+            }
+
+
         }
     }
 }
